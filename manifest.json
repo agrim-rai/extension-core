@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Syntax Sentry",
+    "version": "1.0",
+    "description": "Comprehensive activity monitoring and AI detection system",
+    "permissions": [
+        "storage",
+        "scripting",
+        "tabs",
+        "clipboardRead",
+        "clipboardWrite",
+        "activeTab",
+        "webNavigation",
+        "desktopCapture",
+        "downloads"
+    ],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "all_frames": true,
+            "world": "MAIN"
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
