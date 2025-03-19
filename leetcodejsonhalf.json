@@ -1,0 +1,311 @@
+{
+"props": {
+        "pageProps": {
+            "isRobotVisit": false,
+            "isMobile": true,
+            "dehydratedState": {
+                "mutations": [],
+                "queries": [{
+                            "state": {
+                                "data": {
+                                    "userStatus": {
+                                        "userId": 14552389,
+                                        "isSignedIn": true,
+                                        "isMockUser": false,
+                                        "isPremium": false,
+                                        "isVerified": true,
+                                        "username": "agrimrai7",
+                                        "realName": "Agrim Rai",
+                                        "avatar": "https://assets.leetcode.com/users/agrimraicoding/avatar_1729747396.png",
+                                        "isAdmin": false,
+                                        "isSuperuser": false,
+                                        "permissions": [],
+                                        "isTranslator": false,
+                                        "activeSessionId": 15180543,
+                                        "checkedInToday": true,
+                                        "completedFeatureGuides": ["NEW_IDE_DYNAMIC_LAYOUT_V2"],
+                                        "notificationStatus": {
+                                            "lastModified": 1736443141,
+                                            "numUnread": 6
+                                        }
+                                    }
+                                },
+                                "dataUpdateCount": 1,
+                                "dataUpdatedAt": 1742406865089,
+                                "error": null,
+                                "errorUpdateCount": 0,
+                                "errorUpdatedAt": 0,
+                                "fetchFailureCount": 0,
+                                "fetchFailureReason": null,
+                                "fetchMeta": null,
+                                "isInvalidated": false,
+                                "status": "success",
+                                "fetchStatus": "idle"
+                            },
+                            "queryKey": ["globalData", {}],
+                            "queryHash": "[\"globalData\",{}]"
+                        }, {
+                            "state": {
+                                "data": {
+                                    "languageList": [{
+                                        "id": 0,
+                                        "name": "cpp"
+                                    }, {
+                                        "id": 1,
+                                        "name": "java"
+                                    }, {
+                                        "id": 2,
+                                        "name": "python"
+                                    }, {
+                                        "id": 11,
+                                        "name": "python3"
+                                    }, {
+                                        "id": 3,
+                                        "name": "mysql"
+                                    }, {
+                                        "id": 14,
+                                        "name": "mssql"
+                                    }, {
+                                        "id": 15,
+                                        "name": "oraclesql"
+                                    }, {
+                                        "id": 4,
+                                        "name": "c"
+                                    }, {
+                                        "id": 5,
+                                        "name": "csharp"
+                                    }, {
+                                        "id": 6,
+                                        "name": "javascript"
+                                    }, {
+                                        "id": 20,
+                                        "name": "typescript"
+                                    }, {
+                                        "id": 8,
+                                        "name": "bash"
+                                    }, {
+                                        "id": 19,
+                                        "name": "php"
+                                    }, {
+                                        "id": 9,
+                                        "name": "swift"
+                                    }, {
+                                        "id": 13,
+                                        "name": "kotlin"
+                                    }, {
+                                        "id": 24,
+                                        "name": "dart"
+                                    }, {
+                                        "id": 10,
+                                        "name": "golang"
+                                    }, {
+                                        "id": 7,
+                                        "name": "ruby"
+                                    }, {
+                                        "id": 12,
+                                        "name": "scala"
+                                    }, {
+                                        "id": 18,
+                                        "name": "rust"
+                                    }, {
+                                        "id": 21,
+                                        "name": "racket"
+                                    }, {
+                                        "id": 22,
+                                        "name": "erlang"
+                                    }, {
+                                        "id": 23,
+                                        "name": "elixir"
+                                    }, {
+                                        "id": 25,
+                                        "name": "pythondata"
+                                    }, {
+                                        "id": 28,
+                                        "name": "postgresql"
+                                    }],
+                                    "submittableLanguageList": [{
+                                        "id": 0,
+                                        "name": "cpp",
+                                        "verboseName": "C++"
+                                    }, {
+                                        "id": 1,
+                                        "name": "java",
+                                        "verboseName": "Java"
+                                    }, {
+                                        "id": 2,
+                                        "name": "python",
+                                        "verboseName": "Python"
+                                    }, {
+                                        "id": 11,
+                                        "name": "python3",
+                                        "verboseName": "Python3"
+                                    }, {
+                                        "id": 3,
+                                        "name": "mysql",
+                                        "verboseName": "MySQL"
+                                    }, {
+                                        "id": 14,
+                                        "name": "mssql",
+                                        "verboseName": "MS SQL Server"
+                                    }, {
+                                        "id": 15,
+                                        "name": "oraclesql",
+                                        "verboseName": "Oracle"
+                                    }, {
+                                        "id": 4,
+                                        "name": "c",
+                                        "verboseName": "C"
+                                    }, {
+                                        "id": 5,
+                                        "name": "csharp",
+                                        "verboseName": "C#"
+                                    }, {
+                                        "id": 6,
+                                        "name": "javascript",
+                                        "verboseName": "JavaScript"
+                                    }, {
+                                        "id": 20,
+                                        "name": "typescript",
+                                        "verboseName": "TypeScript"
+                                    }, {
+                                        "id": 8,
+                                        "name": "bash",
+                                        "verboseName": "Bash"
+                                    }, {
+                                        "id": 19,
+                                        "name": "php",
+                                        "verboseName": "PHP"
+                                    }, {
+                                        "id": 9,
+                                        "name": "swift",
+                                        "verboseName": "Swift"
+                                    }, {
+                                        "id": 13,
+                                        "name": "kotlin",
+                                        "verboseName": "Kotlin"
+                                    }, {
+                                        "id": 24,
+                                        "name": "dart",
+                                        "verboseName": "Dart"
+                                    }, {
+                                        "id": 10,
+                                        "name": "golang",
+                                        "verboseName": "Go"
+                                    }, {
+                                        "id": 7,
+                                        "name": "ruby",
+                                        "verboseName": "Ruby"
+                                    }, {
+                                        "id": 12,
+                                        "name": "scala",
+                                        "verboseName": "Scala"
+                                    }, {
+                                        "id": 18,
+                                        "name": "rust",
+                                        "verboseName": "Rust"
+                                    }, {
+                                        "id": 21,
+                                        "name": "racket",
+                                        "verboseName": "Racket"
+                                    }, {
+                                        "id": 22,
+                                        "name": "erlang",
+                                        "verboseName": "Erlang"
+                                    }, {
+                                        "id": 23,
+                                        "name": "elixir",
+                                        "verboseName": "Elixir"
+                                    }, {
+                                        "id": 25,
+                                        "name": "pythondata",
+                                        "verboseName": "Pandas"
+                                    }, {
+                                        "id": 26,
+                                        "name": "react",
+                                        "verboseName": "React"
+                                    }, {
+                                        "id": 27,
+                                        "name": "vanillajs",
+                                        "verboseName": "Vanilla JS"
+                                    }, {
+                                        "id": 28,
+                                        "name": "postgresql",
+                                        "verboseName": "PostgreSQL"
+                                    }, {
+                                        "id": 29,
+                                        "name": "cangjie",
+                                        "verboseName": "Cangjie"
+                                    }],
+                                    "statusList": [{
+                                        "id": 10,
+                                        "name": "Accepted"
+                                    }, {
+                                        "id": 11,
+                                        "name": "Wrong Answer"
+                                    }, {
+                                        "id": 12,
+                                        "name": "Memory Limit Exceeded"
+                                    }, {
+                                        "id": 13,
+                                        "name": "Output Limit Exceeded"
+                                    }, {
+                                        "id": 14,
+                                        "name": "Time Limit Exceeded"
+                                    }, {
+                                        "id": 15,
+                                        "name": "Runtime Error"
+                                    }, {
+                                        "id": 16,
+                                        "name": "Internal Error"
+                                    }, {
+                                        "id": 20,
+                                        "name": "Compile Error"
+                                    }, {
+                                        "id": 30,
+                                        "name": "Timeout"
+                                    }],
+                                    "questionDiscussionTopic": {
+                                        "id": 2485742,
+                                        "commentCount": 554,
+                                        "topLevelCommentCount": 390
+                                    },
+                                    "ugcArticleOfficialSolutionArticle": {
+                                        "uuid": "s9igd0y7",
+                                        "chargeType": "PREMIUM",
+                                        "canSee": false,
+                                        "hasVideoArticle": true
+                                    },
+                                    "question": {
+                                        "title": "Zigzag Conversion",
+                                        "titleSlug": "zigzag-conversion",
+                                        "questionId": "6",
+                                        "questionFrontendId": "6",
+                                        "questionTitle": "Zigzag Conversion",
+                                        "translatedTitle": null,
+                                        "content": "\u003cp\u003eThe string \u003ccode\u003e\u0026quot;PAYPALISHIRING\u0026quot;\u003c/code\u003e is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)\u003c/p\u003e\n\n\u003cpre\u003e\nP   A   H   N\nA P L S I I G\nY   I   R\n\u003c/pre\u003e\n\n\u003cp\u003eAnd then read line by line: \u003ccode\u003e\u0026quot;PAHNAPLSIIGYIR\u0026quot;\u003c/code\u003e\u003c/p\u003e\n\n\u003cp\u003eWrite the code that will take a string and make this conversion given a number of rows:\u003c/p\u003e\n\n\u003cpre\u003e\nstring convert(string s, int numRows);\n\u003c/pre\u003e\n\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003e\u003cstrong class=\"example\"\u003eExample 1:\u003c/strong\u003e\u003c/p\u003e\n\n\u003cpre\u003e\n\u003cstrong\u003eInput:\u003c/strong\u003e s = \u0026quot;PAYPALISHIRING\u0026quot;, numRows = 3\n\u003cstrong\u003eOutput:\u003c/strong\u003e \u0026quot;PAHNAPLSIIGYIR\u0026quot;\n\u003c/pre\u003e\n\n\u003cp\u003e\u003cstrong class=\"example\"\u003eExample 2:\u003c/strong\u003e\u003c/p\u003e\n\n\u003cpre\u003e\n\u003cstrong\u003eInput:\u003c/strong\u003e s = \u0026quot;PAYPALISHIRING\u0026quot;, numRows = 4\n\u003cstrong\u003eOutput:\u003c/strong\u003e \u0026quot;PINALSIGYAHRPI\u0026quot;\n\u003cstrong\u003eExplanation:\u003c/strong\u003e\nP     I    N\nA   L S  I G\nY A   H R\nP     I\n\u003c/pre\u003e\n\n\u003cp\u003e\u003cstrong class=\"example\"\u003eExample 3:\u003c/strong\u003e\u003c/p\u003e\n\n\u003cpre\u003e\n\u003cstrong\u003eInput:\u003c/strong\u003e s = \u0026quot;A\u0026quot;, numRows = 1\n\u003cstrong\u003eOutput:\u003c/strong\u003e \u0026quot;A\u0026quot;\n\u003c/pre\u003e\n\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eConstraints:\u003c/strong\u003e\u003c/p\u003e\n\n\u003cul\u003e\n\t\u003cli\u003e\u003ccode\u003e1 \u0026lt;= s.length \u0026lt;= 1000\u003c/code\u003e\u003c/li\u003e\n\t\u003cli\u003e\u003ccode\u003es\u003c/code\u003e consists of English letters (lower-case and upper-case), \u003ccode\u003e\u0026#39;,\u0026#39;\u003c/code\u003e and \u003ccode\u003e\u0026#39;.\u0026#39;\u003c/code\u003e.\u003c/li\u003e\n\t\u003cli\u003e\u003ccode\u003e1 \u0026lt;= numRows \u0026lt;= 1000\u003c/code\u003e\u003c/li\u003e\n\u003c/ul\u003e\n",
+                                        "translatedContent": null,
+                                        "categoryTitle": "Algorithms",
+                                        "difficulty": "Medium",
+                                        "stats": "{\"totalAccepted\": \"1.7M\", \"totalSubmission\": \"3.3M\", \"totalAcceptedRaw\": 1675624, \"totalSubmissionRaw\": 3292266, \"acRate\": \"50.9%\"}",
+                                        "companyTagStatsV2": null,
+                                        "topicTags": [{
+                                            "name": "String",
+                                            "slug": "string",
+                                            "translatedName": null
+                                        }],
+                                        "similarQuestionList": [],
+                                        "mysqlSchemas": [],
+                                        "dataSchemas": [],
+                                        "frontendPreviews": "{}",
+                                        "likes": 8333,
+                                        "dislikes": 15239,
+                                        "isPaidOnly": false,
+                                        "status": null,
+                                        "canSeeQuestion": true,
+                                        "enableTestMode": false,
+                                        "metaData": "{\r\n  \"name\": \"convert\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"numRows\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+                                        "enableRunCode": true,
+                                        "enableSubmit": true,
+                                        "enableDebugger": true,
+                                        "envInfo": "{\"cpp\": [\"C++\", \"\u003cp\u003eCompiled with \u003ccode\u003e clang 19 \u003c/code\u003e using the latest C++ 23 standard, and \u003ccode\u003elibstdc++\u003c/code\u003e provided by GCC 14.\u003c/p\u003e\\r\\n\\r\\n\u003cp\u003eYour code is compiled with level two optimization (\u003ccode\u003e-O2\u003c/code\u003e). \u003ca href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\"\u003eAddressSanitizer\u003c/a\u003e is also enabled to help detect out-of-bounds and use-after-free bugs.\u003c/p\u003e\\r\\n\\r\\n\u003cp\u003eMost standard library headers are already included automatically for your convenience.\u003c/p\u003e\"], \"java\": [\"Java\", \"\u003cp\u003e\u003ccode\u003eOpenJDK 21\u003c/code\u003e. Using compile arguments: \u003ccode\u003e--enable-preview --release 21\u003c/code\u003e\u003c/p\u003e\\r\\n\\r\\n\u003cp\u003eMost standard library headers are already included automatically for your convenience.\u003c/p\u003e\\r\\n\u003cp\u003eIncludes \u003ccode\u003ePair\u003c/code\u003e class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.\u003c/p\u003e\"], \"python\": [\"Python\", \"\u003cp\u003e\u003ccode\u003ePython 2.7.18\u003c/code\u003e.\u003c/p\u003e\\r\\n\\r\\n\u003cp\u003eMost libraries are already imported automatically for your convenience, such as \u003ca href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\"\u003earray\u003c/a\u003e, \u003ca href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\"\u003ebisect\u003c/a\u003e, \u003ca href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\"\u003ecollections\u003c/a\u003e. If you need more libraries, you can import it yourself.\u003c/p\u003e\\r\\n\\r\\n\u003cp\u003eFor Map/TreeMap data structure, you may use \u003ca href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\"\u003esortedcontainers\u003c/a\u003e library.\u003c/p\u003e\\r\\n\\r\\n\u003cp\u003eNote that Python 2.7 \u003ca href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\"\u003eis not maintained anymore\u003c/a\u003e. For the latest Python, please choose Python3 instead.\u003c/p\u003e\"], \"c\": [\"C\", \"\u003cp\u003eCompiled with \u003ccode\u003egcc 14\u003c/code\u003e using the gnu11 standard.\u003c/p\u003e\\r\\n\\r\\n\u003cp\u003eYour code is compiled with level one optimization (\u003ccode\u003e-O2\u003c/code\u003e). \u003ca href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\"\u003eAddressSanitizer\u003c/a\u003e is also enabled to help detect out-of-bounds and use-after-free bugs.\u003c/p\u003e\\r\\n\\r\\n\u003cp\u003eMost standard library headers are already included automatically for your convenience.\u003c/p\u003e\\r\\n\\r\\n\u003cp\u003eFor hash table operations, you may use \u003ca href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\"\u003euthash\u003c/a\u003e. \\\"uthash.h\\\" is included by default. Below are some examples:\u003c/p\u003e\\r\\n\\r\\n\u003cp\u003e\u003cb\u003e1. Adding an item to a hash.\u003c/b\…
+                                }

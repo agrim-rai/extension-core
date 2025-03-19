@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Syntax Sentry",
+  "version": "1.0.0",
+  "description": "Track coding activity on programming problem websites",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*.leetcode.com/*",
+    "*://*.hackerrank.com/*",
+    "*://*.codeforces.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.leetcode.com/problems/*",
+        "*://*.hackerrank.com/challenges/*",
+        "*://*.codeforces.com/problemset/problem/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "config.js",
+        "apiService.js",
+        "sessionManager.js",
+        "keyLogger.js",
+        "mouseMovementTracker.js",
+        "copyPasteTracker.js",
+        "tabSwitchTracker.js"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
