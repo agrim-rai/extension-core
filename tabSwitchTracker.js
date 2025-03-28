@@ -4,6 +4,7 @@
  * Tab Switch Tracker for Syntax Sentry Chrome Extension
  * Monitors when users switch between tabs while solving coding problems
  */
+
 class TabSwitchTracker {
     constructor() {
       // Load configuration

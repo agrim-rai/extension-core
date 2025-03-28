@@ -132,13 +132,13 @@ class CopyPasteTracker {
                 contentLength: copiedText.length,
                 copyCount: this.copyCount,
                 pasteCount: this.pasteCount,
-                sourceElement: {
+                sourceElement: JSON.stringify({  // Convert object to string
                     type: elementType,
                     id: elementId
-                },
+                }),
                 page: pageInfo
             };
-    
+            
             this.log(`Copy event detected (total: ${this.copyCount})`);
             this.sendEvent(copyData);
         } catch (err) {
@@ -149,6 +149,58 @@ class CopyPasteTracker {
     /**
      * Handle paste events
      */
+    // handlePaste(event) {
+    //     try {
+    //         const pastedText = (event.clipboardData || window.clipboardData).getData("text");
+    //         if (!pastedText.trim()) return;
+    
+    //         // Increment paste count
+    //         this.pasteCount++;
+            
+    //         // Update global counter
+    //         if (typeof window !== 'undefined') {
+    //             window.syntaxSentryCopyPasteCount = this.copyCount + this.pasteCount;
+    //         }
+            
+    //         const session = this.getSessionData();
+    //         const pageInfo = this.getPageInfo();
+    
+    //         // Get the active element to know where the user is pasting to
+    //         const activeElement = document.activeElement;
+    //         const elementType = activeElement ? activeElement.tagName.toLowerCase() : 'unknown';
+    //         const elementId = activeElement ? activeElement.id || 'unknown' : 'unknown';
+    
+    //         if (typeof data.targetElement === 'object') {
+    //             data.targetElement = JSON.stringify(data.targetElement);
+    //           }
+    //         const pasteData = {
+    //             eventType: "paste",
+    //             sessionId: session.sessionId || "unknown_session",
+    //             username: session.username || "unknown_user",
+    //             problemName: session.problemSlug || "unknown_problem",
+    //             problemTitle: session.problemTitle || "Unknown Problem",
+    //             platform: session.platform || "unknown_platform",
+    //             timestamp: Date.now(),
+    //             data: pastedText,
+    //             contentLength: pastedText.length,
+    //             copyCount: this.copyCount,
+    //             pasteCount: this.pasteCount,
+    //             targetElement: JSON.stringify({  // Convert object to string
+    //                 type: elementType,
+    //                 id: elementId
+    //             }),
+    //             page: pageInfo
+    //         };
+            
+
+    //         this.log(`Paste event detected (total: ${this.pasteCount})`);
+    //         this.sendEvent(pasteData);
+    //     } catch (err) {
+    //         this.log("Error handling paste event:", err);
+    //     }
+    // }
+
+
     handlePaste(event) {
         try {
             const pastedText = (event.clipboardData || window.clipboardData).getData("text");
@@ -178,14 +230,11 @@ class CopyPasteTracker {
                 problemTitle: session.problemTitle || "Unknown Problem",
                 platform: session.platform || "unknown_platform",
                 timestamp: Date.now(),
-                data: this.truncateContent(pastedText),
+                data: pastedText,
                 contentLength: pastedText.length,
                 copyCount: this.copyCount,
                 pasteCount: this.pasteCount,
-                targetElement: {
-                    type: elementType,
-                    id: elementId
-                },
+                targetElement: `${elementType}_${elementId}`, // Simplified string representation
                 page: pageInfo
             };
     
