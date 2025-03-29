@@ -106,6 +106,7 @@ class SessionManager {
         const username = this.getUsername();
         const problemSlug = this.getProblemSlug();
         const problemTitle = this.getProblemTitle();
+        const problemId = this.getProblemId();
         const platform = this.getPlatform();
         
         const newSession = {
@@ -113,6 +114,7 @@ class SessionManager {
             username,
             problemSlug,
             problemTitle,
+            problemId,
             platform,
             createdAt: Date.now(),
             lastActivity: Date.now()
@@ -201,13 +203,13 @@ class SessionManager {
      */
     getProblemSlug() {
         try {
-            // First try to get problem ID from __NEXT_DATA__ script
+            // First try to get problem slug from __NEXT_DATA__ script
             const nextDataScript = document.getElementById('__NEXT_DATA__');
             if (nextDataScript) {
                 const nextData = JSON.parse(nextDataScript.textContent);
                 const question = nextData?.props?.pageProps?.dehydratedState?.queries?.[1]?.state?.data?.question;
                 if (question?.questionId) {
-                    return question.questionId.toString();
+                    return question.questionId;
                 }
             }
 
@@ -227,6 +229,28 @@ class SessionManager {
     }
     
     /**
+     * Get the problem ID
+     */
+    getProblemId() {
+        try {
+            // Get problem ID from __NEXT_DATA__ script
+            const nextDataScript = document.getElementById('__NEXT_DATA__');
+            if (nextDataScript) {
+                const nextData = JSON.parse(nextDataScript.textContent);
+                const question = nextData?.props?.pageProps?.dehydratedState?.queries?.[1]?.state?.data?.question;
+                if (question?.questionId) {
+                    return parseInt(question.questionId, 10);
+                }
+            }
+            
+            return null;
+        } catch (err) {
+            this.log("Error getting problem ID:", err);
+            return null;
+        }
+    }
+    
+    /**
      * Get the current problem title from the DOM
      */
     getProblemTitle() {
@@ -236,6 +260,9 @@ class SessionManager {
             if (nextDataScript) {
                 const nextData = JSON.parse(nextDataScript.textContent);
                 const question = nextData?.props?.pageProps?.dehydratedState?.queries?.[1]?.state?.data?.question;
+                if (question?.questionTitle) {
+                    return question.questionTitle;
+                }
                 if (question?.title) {
                     return question.title;
                 }
